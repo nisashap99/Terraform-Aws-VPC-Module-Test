@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "expense-project-vpc"
+    bucket         = "expense-project-env-dev"
     region         = "us-east-1"
     key            = "Project-expense-VPC"
-    dynamodb_table = "expense-project-vpc"
+    dynamodb_table = "expense-project-env-dev"
   }
 }
 
